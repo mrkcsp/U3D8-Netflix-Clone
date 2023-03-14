@@ -1,0 +1,110 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: white;
+  min-width: 375px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  padding: 0 8rem;
+  color: white;
+}
+
+.acc {
+  padding-left: 0;
+}
+
+.avatar {
+  height: 30px;
+  margin: 0 0;
+}
+
+.bell {
+  padding-right: 0;
+}
+
+.bi-bell {
+  color: white;
+}
+
+.bi-facebook {
+  padding-right: 0.2em;
+}
+.carousel-control-next {
+  margin-right: -7%;
+}
+.carousel-control-prev {
+  margin-left: -7%;
+}
+
+.divWrap {
+  flex-wrap: nowrap;
+}
+
+.divWrap .prova {
+  padding: auto;
+  transition: 250ms all;
+}
+.divWrap .prova:hover {
+  margin: 0 10px;
+  transform: scale(1.1);
+}
+.movie-img {
+  border-radius: 5px;
+}
+
+@media (max-width: 670px) {
+  .movie-img {
+    width: 100vh;
+  }
+}
+
+@media (min-width: 769px) {
+  .movie-img {
+    width: 31.5vh;
+  }
+}
+
+/* transition */
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.aRigaUno {
+  animation: slide-in 1000ms;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.aRigaDue {
+  animation: slide-in 1000ms;
+  animation-delay: 1500ms;
+  animation-fill-mode: backwards;
+}
+
+.aRigaTre {
+  animation: slide-in 1000ms;
+  animation-delay: 2500ms;
+  animation-fill-mode: backwards;
+}
